@@ -16,20 +16,34 @@
     margin-top:70px;
     display:inline-block;
  }
+		  form{
+			  display:flex;
+			  width:300px;
+			  background-color:white;
+			  padding:20px;
+			  borde-radius:5px;
+			  box-shadow: 0 0 10px #ccc;
+			  flex-direction : column;
+			   gap: 10px;
+}
  .card-body>form>input{
     width:300px;
     height:40px;
-    border-radius: 2px;
-    border:0.1px ridge black;
+    border-radius: 5px;
+    border:1px solid #ccc;
+	 padding :10px;
  }
  form>button{
     border:none;
     text-align: center;
     color:white;
-    border-radius: 2px;
+    border-radius: 5px;
+	 background-color: #1877f2;
+	 padding : 10px 20px;
  }
  form>a{
     text-decoration: none;
+	 color:#1877f2;
  }
  .signup{
     display: inline-block;
@@ -38,6 +52,7 @@
     width:300px;
     height:35px;
     border-radius: 2px;
+	 background-color:42b72a;
  }
 
 	  </style>
@@ -51,13 +66,13 @@
     <div class="right ms-3">
         <div class="card">
             <div class="card-body">
-                <form class="d-flex flex-column">
+                <form >
                     <input type="text" id="email" placeholder="Email address or phone number"><br>
                     <input type="password" id="password" placeholder="Password"><br>
-                    <button type="submit" class="bg-primary">Log in</button><br>
+                    <button type="submit" >Log in</button><br>
                     <a href="#"> Forgotten account?</a><br>
                     </form>
-                    <botton class="signup bg-success pt-1">Create new account</botton>
+                    <botton >Create new account</botton>
             </div>
           </div>
 
